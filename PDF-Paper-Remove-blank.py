@@ -25,11 +25,11 @@ for index , line  in enumerate(lines):
         continue
     #小标题
     if(line[0].isdigit() and line[1]=='.'):
-        processed_content += '\n'+line + '\n'
+        processed_content += '\n\n' + line + '\n\n'
         continue    
     #段落
     if(index > 0 and lines[index-1][-1]== '.' and  line[0].isupper()):
-        processed_content += '\n' + line + ' '
+        processed_content += "\n \n" + line + ' '
         #print('s')
         continue
     if(is_ch_line == 0 and line[-1] == '-'):
